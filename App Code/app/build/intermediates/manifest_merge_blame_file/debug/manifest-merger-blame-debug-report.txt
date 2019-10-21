@@ -1,0 +1,159 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="com.example.devjams19"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="24"
+9-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:6:5-65
+12-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:6:22-62
+13
+14    <uses-feature
+14-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:8:5-10:35
+15        android:name="android.hardware.camera.ar"
+15-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:9:9-50
+16        android:required="true" />
+16-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:10:9-32
+17
+18    <dist:module dist:instant="true" />
+18-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:12:5-40
+18-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:12:18-37
+19
+20    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+21    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.firebase:firebase-database:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\81fc475a750df15809443a5b046b0cfe\firebase-database-19.0.0\AndroidManifest.xml:25:5-79
+22-->[com.google.firebase:firebase-database:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\81fc475a750df15809443a5b046b0cfe\firebase-database-19.0.0\AndroidManifest.xml:25:22-76
+23    <uses-permission android:name="android.permission.INTERNET" />
+23-->[com.google.firebase:firebase-database:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\81fc475a750df15809443a5b046b0cfe\firebase-database-19.0.0\AndroidManifest.xml:26:5-67
+23-->[com.google.firebase:firebase-database:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\81fc475a750df15809443a5b046b0cfe\firebase-database-19.0.0\AndroidManifest.xml:26:22-64
+24
+25    <application
+25-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:14:5-38:19
+26        android:allowBackup="true"
+26-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:15:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.1.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\cda027772ef86c59095f74c9efd12e4b\core-1.1.0\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:extractNativeLibs="false"
+30        android:icon="@mipmap/ic_launcher"
+30-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:16:9-43
+31        android:label="@string/app_name"
+31-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:17:9-41
+32        android:roundIcon="@mipmap/ic_launcher_round"
+32-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:18:9-54
+33        android:supportsRtl="true"
+33-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:19:9-35
+34        android:testOnly="true"
+35        android:theme="@style/AppTheme" >
+35-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:20:9-40
+36        <activity android:name="com.example.devjams19.DisplayActivity" />
+36-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:21:9-62
+36-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:21:19-50
+37        <activity android:name="com.example.devjams19.SplashActivity" >
+37-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:22:9-28:20
+37-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:22:19-49
+38            <intent-filter>
+38-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:23:13-27:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:24:17-69
+39-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:24:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:26:17-77
+41-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:26:27-74
+42            </intent-filter>
+43        </activity>
+44        <activity android:name="com.example.devjams19.ObjectActivity" />
+44-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:29:9-52
+44-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:29:19-49
+45        <activity android:name="com.example.devjams19.LakeActivity" />
+45-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:30:9-50
+45-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:30:19-47
+46        <activity android:name="com.example.devjams19.ArActivity" />
+46-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:31:9-48
+46-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:31:19-45
+47        <activity android:name="com.example.devjams19.ParkingActivity" />
+47-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:32:9-53
+47-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:32:19-50
+48        <activity android:name="com.example.devjams19.MainActivity" />
+48-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:33:9-59
+48-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:33:19-47
+49
+50        <meta-data
+50-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:35:9-37:40
+51            android:name="com.google.ar.core"
+51-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:36:13-46
+52            android:value="required" />
+52-->D:\Work\DevJams19\app\src\main\AndroidManifest.xml:37:13-37
+53
+54        <service
+54-->[com.google.firebase:firebase-database:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\81fc475a750df15809443a5b046b0cfe\firebase-database-19.0.0\AndroidManifest.xml:29:9-35:19
+55            android:name="com.google.firebase.components.ComponentDiscoveryService"
+55-->[com.google.firebase:firebase-database:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\81fc475a750df15809443a5b046b0cfe\firebase-database-19.0.0\AndroidManifest.xml:30:13-84
+56            android:exported="false" >
+56-->[com.google.firebase:firebase-database:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\81fc475a750df15809443a5b046b0cfe\firebase-database-19.0.0\AndroidManifest.xml:31:13-37
+57            <meta-data
+57-->[com.google.firebase:firebase-database:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\81fc475a750df15809443a5b046b0cfe\firebase-database-19.0.0\AndroidManifest.xml:32:13-34:85
+58                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+58-->[com.google.firebase:firebase-database:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\81fc475a750df15809443a5b046b0cfe\firebase-database-19.0.0\AndroidManifest.xml:33:17-109
+59                android:value="com.google.firebase.components.ComponentRegistrar" />
+59-->[com.google.firebase:firebase-database:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\81fc475a750df15809443a5b046b0cfe\firebase-database-19.0.0\AndroidManifest.xml:34:17-82
+60        </service>
+61
+62        <activity
+62-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\4f629fc0a6209c306342c9839484e479\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+63            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+63-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\4f629fc0a6209c306342c9839484e479\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+64            android:exported="false"
+64-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\4f629fc0a6209c306342c9839484e479\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+65            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+65-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\4f629fc0a6209c306342c9839484e479\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+66
+67        <provider
+67-->[com.google.firebase:firebase-common:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\a0395ea94b51e3b5bb7d16bcfeab95e9\firebase-common-19.0.0\AndroidManifest.xml:12:9-16:39
+68            android:name="com.google.firebase.provider.FirebaseInitProvider"
+68-->[com.google.firebase:firebase-common:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\a0395ea94b51e3b5bb7d16bcfeab95e9\firebase-common-19.0.0\AndroidManifest.xml:13:13-77
+69            android:authorities="com.example.devjams19.firebaseinitprovider"
+69-->[com.google.firebase:firebase-common:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\a0395ea94b51e3b5bb7d16bcfeab95e9\firebase-common-19.0.0\AndroidManifest.xml:14:13-72
+70            android:exported="false"
+70-->[com.google.firebase:firebase-common:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\a0395ea94b51e3b5bb7d16bcfeab95e9\firebase-common-19.0.0\AndroidManifest.xml:15:13-37
+71            android:initOrder="100" />
+71-->[com.google.firebase:firebase-common:19.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\a0395ea94b51e3b5bb7d16bcfeab95e9\firebase-common-19.0.0\AndroidManifest.xml:16:13-36
+72
+73        <meta-data
+73-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\7c9fd54a502d844f228cf9349ec98d4c\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+74            android:name="com.google.android.gms.version"
+74-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\7c9fd54a502d844f228cf9349ec98d4c\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+75            android:value="@integer/google_play_services_version" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+75-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\7c9fd54a502d844f228cf9349ec98d4c\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+76        <meta-data
+76-->[com.google.ar:core:1.12.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\2f6512a08f4624a65b805648e1553de9\core-1.12.0\AndroidManifest.xml:33:9-35:41
+77            android:name="com.google.ar.core.min_apk_version"
+77-->[com.google.ar:core:1.12.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\2f6512a08f4624a65b805648e1553de9\core-1.12.0\AndroidManifest.xml:34:13-62
+78            android:value="190805000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+78-->[com.google.ar:core:1.12.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\2f6512a08f4624a65b805648e1553de9\core-1.12.0\AndroidManifest.xml:35:13-38
+79        <activity
+79-->[com.google.ar:core:1.12.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\2f6512a08f4624a65b805648e1553de9\core-1.12.0\AndroidManifest.xml:37:9-43:80
+80            android:name="com.google.ar.core.InstallActivity"
+80-->[com.google.ar:core:1.12.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\2f6512a08f4624a65b805648e1553de9\core-1.12.0\AndroidManifest.xml:38:13-62
+81            android:configChanges="keyboardHidden|orientation|screenSize"
+81-->[com.google.ar:core:1.12.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\2f6512a08f4624a65b805648e1553de9\core-1.12.0\AndroidManifest.xml:39:13-74
+82            android:excludeFromRecents="true"
+82-->[com.google.ar:core:1.12.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\2f6512a08f4624a65b805648e1553de9\core-1.12.0\AndroidManifest.xml:40:13-46
+83            android:exported="false"
+83-->[com.google.ar:core:1.12.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\2f6512a08f4624a65b805648e1553de9\core-1.12.0\AndroidManifest.xml:41:13-37
+84            android:launchMode="singleTop"
+84-->[com.google.ar:core:1.12.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\2f6512a08f4624a65b805648e1553de9\core-1.12.0\AndroidManifest.xml:42:13-43
+85            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+85-->[com.google.ar:core:1.12.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\2f6512a08f4624a65b805648e1553de9\core-1.12.0\AndroidManifest.xml:43:13-77
+86    </application>
+87
+88</manifest>
